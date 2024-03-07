@@ -1,0 +1,596 @@
+/*****************WHY US*****************/
+
+
+.feedback2{
+    margin-top: 3rem;
+}
+
+@media(max-width:375px){
+    .feedback2{
+        margin-top: 1rem;
+    }
+}
+
+.wrap {
+    height: 100%;
+    width: 100%;
+}
+
+.box-of-checks {
+    padding: 3rem 3rem;
+}
+
+.box-of-checks__content {
+    position: relative;
+    display: flex;
+    border: 1px solid var(--detail-color);
+    border-radius: 4px;
+    padding: 30px
+}
+
+@media screen and (min-width: 1024px) {
+    .box-of-checks__content {
+        display: block;
+        padding-left: 60px;
+        padding-right: 60px
+    }
+}
+
+.box-of-checks__list {
+    list-style: none;
+    padding-left: 0
+}
+
+@media screen and (min-width: 576px) {
+    .box-of-checks__list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px 20px
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .box-of-checks__list {
+        grid-template-columns: repeat(3, 1fr)
+    }
+}
+
+.box-of-checks__list-item {
+    padding-left: 26px;
+    position: relative
+}
+
+.box-of-checks__list-item+.box-of-checks__list-item {
+    margin-top: 10px
+}
+
+@media screen and (min-width: 576px) {
+    .box-of-checks__list-item+.box-of-checks__list-item {
+        margin-top: 0
+    }
+}
+
+.box-of-checks__list-item::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 0;
+    display: inline-block;
+    background-image: url(../img/check2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 18px;
+    height: 13px;
+}
+
+.box-of-checks__title {
+    position: absolute;
+    top: -8px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin: auto;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.box-of-checks__title-text {
+    background-color: white;
+    color: var(--main-background);
+    display: inline-block;
+    line-height: 1.077;
+    padding: 0 12px
+}
+
+
+@media (max-width: 480px) and (max-height: 853px) {
+
+
+    .box-of-checks {
+        padding: 3rem 3rem;
+    }
+
+    .box-of-checks__content {
+        position: relative;
+        display: flex;
+        border: 1px solid rgba(166, 135, 104, .3);
+        border-radius: 4px;
+        padding: 30px;
+    }
+
+    .wrap {
+        height: 100%;
+        width: 100%;
+    }
+    .contact-form-content form {
+        background-color: var(--main-background);
+        padding: 2rem 2rem;
+        width: 100%;
+    }
+
+
+}
+
+
+/* ------------------------ CONTACT FORM ------------------------*/
+::placeholder {
+    background-color: #f2f2f2; 
+}
+
+.form-group [type="text"] {
+    padding:2rem 0rem;
+    color:black;
+    border-bottom: 2px;
+    padding: 8px;
+}
+
+.container-contact {
+    background-color: var(--primary-color);
+    background-image: url(../img/Extras/topTexture.png);
+    background-color: black;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2rem 0rem;
+    margin: auto;
+    position: relative;
+    z-index: 20;
+    height: 60vh;
+    margin-top: 7rem;
+}
+
+.contact-form{
+    height: 100%;
+    margin: auto;
+}
+
+.contact-form .title {
+    margin-bottom: 100px;
+}
+
+.contact-form-form {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    color:black;
+}
+
+
+.contact-form-form .form-group {
+    flex: 1;
+    flex-basis: 48%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form-form .directedto, .contact-form-form .message {
+    flex-basis: 100%;
+}
+
+.contact-form-form label {
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.contact-form-form input, textarea, select {
+    color: black;
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    font-size: 0.8em;
+    font-family: "Montserrat";
+
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.contact-form-form input:focus, textarea:focus {
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+.contact-form-form input:focus::placeholder, textarea:focus::placeholder {
+    visibility: hidden;
+}
+
+.contact-form-form option {
+    color: black;
+}
+
+.contact-form-form input[type="submit"] {
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 0;
+    padding: 2em 1.5em;
+    background: rgb(198,10,23);
+	background: linear-gradient(190deg, rgba(198,10,23,1) 19%, rgba(19,19,20,1) 83%);
+    transition: background 1 ease;
+    transition: all 0.3s ease-in-out;
+    padding: 0.5rem 1.1rem;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+    border-radius: 5px;
+    margin-bottom: 40px;
+}
+
+.contact-form-form input[type="submit"]:hover {
+    animation: moveGradient 0.7s ease-in-out infinite alternate;
+}
+
+.form-group input[type="text"]::placeholder,
+.form-group textarea::placeholder{
+    padding-top: 1rem;
+    padding-bottom: 1rem;   
+    text-indent: 10px; 
+}
+
+input::placeholder {
+    text-indent: 10px; 
+}
+
+.contact-info {
+    display: flex;
+    width: 100%;
+    height: 450px;
+    color: black;
+    background-color: var(--subtitle-color);
+}
+
+
+.contact-info-wrapper {
+    width: 80%;
+    height: 85%;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.info, .info .info-title .sectionTitle{
+    color: white;
+}
+
+.info-text {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.info-text p {
+    font-weight: normal;
+}
+
+.info-title {
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+.info-title .sectionSubtitle,
+.info-text i{
+    color:var(--vive-red)
+}
+
+
+.info-part-title {
+    margin-bottom: 10px;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 1.3em;
+}
+
+.info-part-title i {
+    width: min(35px, 7vw);
+    margin-right: 1.3rem;
+}
+
+.info p{
+    margin-top: 1rem;
+}
+
+.form-social-media {
+    display: flex;
+    gap: 30px;
+    font-size: 2em;
+    margin-left: 2rem;
+}
+
+.form-social-media>* {
+    transition: all 0.3s ease;
+    cursor: pointer;
+    color:var(--vive-red);
+}
+
+.form-social-media>*:hover {
+    color: var(--detail-color);
+}
+
+.minibanda{
+    width: 100%;
+    height: 2vh;
+    background: rgb(198,10,23);
+	background: linear-gradient(190deg, rgba(198,10,23,1) 19%, rgba(19,19,20,1) 83%);
+}
+
+@media (min-width: 1600px) {
+    .contact-form-content form {
+        padding: 3em;
+        width: 45%;
+        margin: 0;
+        margin-left: 5%;
+    }
+
+    .form-social-media {
+        gap: 40px;
+    }
+
+    .form-social-media {
+        display: flex;
+        gap: 30px;
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 1229px){
+
+    .contact-form-content form {
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+        background-color: white;;
+        padding: 3em;
+        width: 45%;
+        margin: 0;
+        margin-left: 3%;
+        position: absolute;
+    }
+    .container-contact{
+        height: auto;
+    }
+
+    .contact-info-wrapper {
+        display: flex;
+        margin: auto 0 auto 0;
+        margin-left: 60vw;
+    }
+}
+
+@media (min-width: 1230px) {
+
+    .contact-form-content form {
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+        background-color: white;;
+        padding: 3em;
+        width: 45%;
+        margin: 0;
+        margin-left: 3%;
+        position: absolute;
+        top:-8%;
+        left:3%;
+        height:750px;
+        z-index: 999;
+    }
+
+    .info {
+        width: fit-content;
+    }
+
+    .contact-info-wrapper {
+        display: flex;
+        margin: auto 0 auto 0;
+        margin-left: 60vw;
+    }
+}
+
+@media (max-width:1100px){
+    .info-title .sectionSubtitle{
+        margin-left: auto;
+    }
+    .reservation-form-container{
+        order:2;
+        width: 100%;
+    }
+}
+
+
+@media (min-width: 700px) {
+
+    .contact-info {
+        height: 600px;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 0;
+        position: absolute;
+    }
+}
+
+@media (max-width:700px){
+    .contact-info-wrapper{
+        margin: 0 auto;
+        align-items: center;
+        margin-top: 3rem;
+    }
+    .form-social-media{
+        margin-top: 2rem;
+    }
+    .contact-form-content form{
+        width: 100%;
+        margin-left: 0%;
+    }
+    .info-title .sectionSubtitle{
+        display: none;
+    }
+}
+
+@media(max-height:975px){
+    .contact-form-content form{
+        height: 730px;
+        top:-18%;
+    }
+    .container-contact{
+        height: 63vh;
+    }
+}
+
+@media(max-height:869px){
+
+    .container-contact{
+        height: 76vh;
+    }
+    .contact-form-content form{
+        height: 650px;
+        top:-3%;
+    }
+    .contact-form-form{
+        gap:0rem;
+    }
+}
+
+@media(max-height:775px){
+
+    .container-contact{
+        height: 80vh;
+    }
+    .contact-form-content form{
+        height: 650px;
+        top:-15%;
+    }
+}
+
+@media(max-height:680px){
+
+    .container-contact{
+        height: 85vh;
+    }
+    .contact-form-content form{
+        height: 681px;
+        top:-15%;
+    }
+}
+
+@media(max-height:650px){
+
+    .container-contact{
+        height: 95vh;
+    }
+    .contact-form-content form{
+        height: 681px;
+        top:-15%;
+    }
+}
+
+@media(max-height:600px){
+
+    .container-contact{
+        height: 100vh;
+    }
+    .contact-form-content form{
+        height: 681px;
+        top:-15%;
+    }
+}
+
+.info {
+    width: fit-content;
+}
+
+.awards {
+	width: 100%;
+	text-align: center;
+	margin: 0 auto;
+}
+.awards p{
+	text-align: initial;
+	margin-top: 3rem;
+	width: 90%;
+    margin: 0 auto;
+}
+.gamesContent{
+    margin: auto;
+    margin-top: 6rem;
+    margin-bottom: 3rem;
+}
+
+.feedback .awards .ourTeamTitle{
+    margin-bottom: 0rem;
+}
+
+@media (max-width:960px){
+    .awards p{
+		text-align: initial;
+		margin-top: 0rem;
+		width: 80%;
+	}
+}
+
+#map {
+    height: 400px;
+    width: 100%;
+    background-image: url(../img/map.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    margin-top: 5rem;
+}
+
+@media(max-width:575px){
+    #map{
+        height: 310px;
+        margin-top: 0rem;
+    }
+    .feedback{
+        margin-top: 0rem;
+    }
+    .feedback .awards .ourTeamTitle .gamesContent{
+        margin-top: 2rem;
+    }
+}
+
+.title {
+    width: 90%;
+    max-width: 830px;
+    line-height: 1.2;
+    position: relative;
+    margin: min(45vw, 80px) auto min(35vw, 70px) auto;
+    text-align: center;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 2.6em;
+}
+
+
+@media(max-width:1283px) {
+    .contactJuegos {
+        background-position: 75% !important;
+        background-attachment: scroll;
+        background-image: url(../img/contacta.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}

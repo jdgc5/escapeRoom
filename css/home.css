@@ -1,0 +1,1013 @@
+/* --------------- HERO STYLES -------------- */
+
+header {
+	height: 100vh;
+	max-width: 100%;
+	background: transparent;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	display: flex;
+	flex-flow: column;
+	transition: all 0.3s ease-in-out;
+	margin-bottom: 3rem;
+}
+
+.heroButton {
+	display: flex;
+	justify-content: start;
+	align-items: center;
+}
+
+.heroButton a:last-child {
+	display: inline-block;
+	height: 100px;
+	aspect-ratio: 1 /1;
+	text-align: center;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	color: var(--detail-color);
+	background-color: rgba(255, 255, 255, 0.3);
+	border-radius: 50%;
+	font-size: 1.5rem;
+	box-shadow: -2px 2px 10px 0px rgba(0, 0, 0, 0.1);
+	order: 1;
+	transition: all 0.3s ease-in-out;
+}
+
+.heroButton a:last-child i {
+	background-color: white;
+	width: 60%;
+	aspect-ratio: 1/1;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: -2px 2px 10px 0px rgba(0, 0, 0, 0.1);
+	transition: all 0.3s ease-in-out;
+}
+
+.heroButton a:last-child:hover {
+	transform: translateY(-2px);
+}
+
+.heroButton a:last-child:hover i {
+	transform: scale(1.1);
+}
+
+.heroButton a:first-child {
+	margin-left: 1.5rem;
+	text-decoration: none;
+	color: var(--detail-color);
+	font-family: Montserrat, sans-serif;
+	font-weight: var(--mont-semibold);
+	font-size: var(--text-size);
+	order: 2;
+}
+
+.heroButton a:first-child:hover + a {
+	transform: translateY(-2px);
+}
+
+.heroButton a:first-child:hover + a i {
+	transform: scale(1.1);
+}
+
+.buttonHome {
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+    font-size: 1.2rem;
+	width: 200px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.buttonHome button {
+    display: block;
+    width: 200px;
+	height: 70px;
+    padding: 20px;
+    background: rgb(198,10,23);
+	background: linear-gradient(190deg, rgba(198,10,23,1) 19%, rgba(19,19,20,1) 83%);
+    transition: background 1 ease;
+    transition: all 0.3s ease-in-out;
+    color: #fff;
+    text-shadow: 1px 1px 1px black;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-family: Montserrat, sans-serif;
+    font-size: 1.2rem;   
+}
+
+.buttonHome button:hover {
+    animation: moveGradient 0.7s ease-in-out infinite alternate;
+}
+
+
+/* ------------------ SOBRE NOSOTROS ----------------- */
+.aboutescapeHunt {
+	width: 90%;
+	margin: 0 auto;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+	margin-bottom: var(--mb-sections);
+}
+
+.aboutescapeHuntGallery{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	gap: 1rem;
+	flex-direction: column;
+	flex:1;
+	
+}
+
+.aboutescapeHuntGallery .photo {
+    width: 400px; 
+    height: 200px;
+    background-size: cover; 
+    background-position: center; 
+}
+
+
+.aboutescapeHuntGallery .photo:first-child{
+	background-image: url(../img/QuienesSomos/1.jpg);
+}
+.aboutescapeHuntGallery .photo:nth-child(2){
+	background-image: url(../img/QuienesSomos/2.jpg);
+}
+.aboutescapeHuntGallery .photo:nth-child(3){
+	background-image: url(../img/QuienesSomos/3.jpg);
+}
+.aboutescapeHuntGallery .photo:last-child{
+	background-image: url(../img/QuienesSomos/5.jpg);
+}
+
+.aboutescapeHuntGallery .photo{
+	transition: all 0.5s ease-in-out;
+}
+
+.aboutescapeHuntGallery .photo:hover{
+	transform: scale(1.05);
+}
+
+.aboutescapeHuntContent {
+	flex: 1;
+	text-align: left;
+}
+
+.aboutescapeHuntContent .sectionTitle {
+	margin-bottom: 3.125rem;
+}
+
+.aboutescapeHuntContent p {
+	font-size: var(--text-size);
+	font-family: Montserrat, sans-serif;
+	font-weight: 200;
+	line-height: 1.9rem;
+	margin-right: 7rem;
+	color: var(--primary-color);
+}
+
+.aboutescapeHuntContent p:not(.aboutescapeHuntContent p:last-child) {
+	margin-bottom: 2rem;
+}
+
+
+/* -------------------- HISTORY STYLES ----------------- */
+.ourHistory {
+	width: 98%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+}
+
+.ourHistoryContent {
+	flex: 9;
+	background-color: white;
+	border-radius: 3px;
+	margin: 3rem 0rem;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-content: center;
+}
+
+.containerRetos{
+	background: rgb(198,10,23);
+	background: linear-gradient(190deg, rgba(198,10,23,1) 19%, rgba(19,19,20,1) 83%);
+	margin: 5rem 0rem;
+}
+.retosContain{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	font-size: var(--text-size);
+	font-family: Montserrat, sans-serif;
+	font-weight: 200;
+	width: 80%;
+	padding: 4rem 0rem;
+	color: white;
+	margin: 0 auto;
+}
+
+.ourHistoryContent .sectionTitle {
+	margin-bottom: 3.125rem;
+}
+
+.ourHistoryContent p {
+	font-size: var(--text-size);
+	font-family: Montserrat, sans-serif;
+	font-weight: 200;
+	line-height: 1.9rem;
+	color: var(--primary-color);
+	width: 80%;
+}
+
+.ourHistoryContent p:not(.ourHistoryContent p:last-child) {
+	margin-bottom: 2rem;
+}
+
+.ourHistoryImage {
+	margin-top: 5rem;
+	flex: 10;
+	min-height: 1000px;
+	background: transparent;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: right;
+}
+
+.homeEscape .aboutescapeHunt{
+	margin-bottom: 3rem;
+}
+
+/* ------------------------ FEATURES STYLES ---------------- */
+.features {
+	width: 99%;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	align-content: center;
+	text-align: center;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	margin-bottom: 8rem;
+	position: relative;
+	height: 50vh;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.feature {
+	max-width: 20.4rem;
+	color: white;
+	z-index: 50;
+}
+.planPerfecto{
+	font-weight: bold;
+	text-shadow: 1px 1px 1px black;
+}
+
+.feature2{
+	width: 99%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	flex-direction: column;
+	height: 100%;
+}
+
+.feature2::before{
+	content: "";
+    position: absolute;
+    height: 41%;
+    width: 2px;
+    left:50%;
+    top:28%;
+	background-color: var(--detail-color);
+	z-index: 55;
+}
+
+.feature2 p{
+	margin-bottom: 2rem;
+}
+
+.feature .icono {
+	width: 125px;
+	height: 50px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	margin: 0 auto;
+	margin-bottom: 1.5rem;
+}
+
+.feature h2 {
+	text-align: center;
+	font-family: "Montserrat", sans-serif;
+	font-size: 2rem;
+	font-weight: bold;
+	color:white;
+	letter-spacing: 0.2rem;
+	margin-bottom: 1rem;
+}
+
+.feature p {
+	font-size: var(--second-text-size);
+	font-family: Montserrat, sans-serif;
+	font-weight: 400;
+	line-height: 1.6rem;
+	color: white;
+}
+
+/* --------------------------- OUR TEAM ------------------------ */
+
+.ourTeam {
+	width: 100%;
+	text-align: center;
+	margin: auto;
+	margin-top:8rem;
+	margin-bottom: 12rem;
+}
+.ourTeam p{
+	text-align: initial;
+	margin-top: 3rem;
+	width: 90%;
+}
+
+.ourTeamTitle {
+	margin-bottom: 6.25rem;
+}
+
+.teamCards {
+	font-size: var(--selected-text);
+	font-family: "Quicksand", sans-serif;
+	text-transform: uppercase;
+	color: var(--primary-color);
+	letter-spacing: 0.2rem;
+
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: start;
+	align-content: start;
+	gap: 2rem;
+}
+
+.miembroEquipo {
+	flex: 1 0 48%;
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.socials {
+	gap: 2rem;
+}
+
+.miembroEquipo .image {
+	width: 18.75rem;
+	height: 23.125rem;
+	margin-bottom: 1.563rem;
+	overflow: hidden;
+	margin: 1rem;
+}
+
+.miembroEquipo .image .img {
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 90%;
+	transition: all 0.4s ease-in-out;
+}
+
+.miembroEquipo .image:hover .img {
+	cursor:cell;
+	filter: grayscale(0.9);
+	transform: scale(1.04);
+}
+
+
+.miembroEquipo:first-child .image .img {
+	background-image: url(../img/Team/1.jpeg);
+}
+.miembroEquipo:nth-child(2) .image .img {
+	background-image: url(../img/Team/2.jpeg);
+}
+.miembroEquipo:nth-child(3) .image .img {
+	background-image: url(../img/Team/3.jpeg);
+}
+.miembroEquipo:last-child .image .img {
+	background-image: url(../img/Team/4.jpeg);
+}
+
+.miembroEquipo .name {
+	margin-bottom: 0.725rem;
+}
+.miembroEquipo .rol{
+	color: var(--detail-color);
+	font-size: 1rem;
+}
+
+.miembroEquipo .socials {
+	margin: 0 auto;
+	margin-bottom: 2.5rem;
+	max-width: 85%;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-evenly;
+	align-items: center;
+	align-content: center;
+}
+
+.miembroEquipo .socials .social {
+	height: 20px;
+	width: 25px;
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	transition: all 0.2s ease-in-out;
+}
+
+.miembroEquipo .socials .social:hover {
+	transform: rotate(5deg) translateY(-2px) scale(1.01);
+}
+
+.miembroEquipo .socials .social:first-child {
+	background-image: url(../img/icons/fb_ico.svg);
+}
+.miembroEquipo .socials .social:nth-child(2) {
+	background-image: url(../img/icons/tw_ico.svg);
+}
+.miembroEquipo .socials .social:last-child {
+	background-image: url(../img/icons/insta_ico.svg);
+}
+.miembroEquipo .socials .social:first-child:hover {
+	background-image: url(../img/icons/fb_o_ico.svg);
+}
+.miembroEquipo .socials .social:nth-child(2):hover {
+	background-image: url(../img/icons/tw_o_ico.svg);
+}
+.miembroEquipo .socials .social:last-child:hover {
+	background-image: url(../img/icons/insta_o_ico.svg);
+}
+
+.conocenos{
+	position: relative;
+}
+.conocenos::before{
+	content: "";
+    position: absolute;
+    height: 2px;
+    background-color: rgb(180, 178, 178);
+    width: 25%;
+    left:15%;
+    top:40%;
+}
+
+.conocenos::after{
+	content: "";
+    position: absolute;
+    height: 2px;
+    background-color: rgb(180, 178, 178);
+    width: 25%;
+    right:15%;
+    top:40%;
+}
+
+/********************************OPTIONS********************************/
+
+.containerOptions {
+    width: 100%;
+    padding: 7rem 0rem;
+    text-align: center;
+	
+	background-image: url(../img/Extras/topTexture.png);
+	background-repeat: no-repeat;
+	background-color: black;
+	background-size: cover;
+	border: 1px solid black; 
+	border-top: none; 
+	box-shadow: 0px -10px 5px -10px rgba(0, 0, 0, 0.5); 
+}
+
+.d-options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	align-content: center;
+    margin: 0 auto;
+    gap: 5rem;
+    padding: 0rem 1rem;
+	flex-wrap: wrap;
+}
+
+.d-options2 {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	cursor: pointer;
+    flex-direction: column;
+}
+
+.d-optionsimg {
+    max-width: 45rem;
+    height: auto;
+	width: auto;
+}
+
+
+.optionTitle1{
+    font-size: var(--size-mediumheadsection);
+    font-family: "Raleway", sans-serif;
+    color:white;
+    font-weight: bold;
+    text-shadow: 2px 1px 1px black;
+}
+
+.optionTitle2{
+    font-size: var(--size-mediumheadsection);
+    font-family: "Raleway", sans-serif;
+    color:white;
+    font-weight: 500;
+    text-shadow: 2px 1px 1px black;
+}
+
+.textureBack2{
+    margin-top: 3rem;
+    background-image: url(../img/backText.jpg);
+    background-size: cover;
+    width: 65%;
+    height: 90%;
+    opacity: 0.5;
+    position: absolute;
+    z-index: -1;
+    top:0%;
+    left:0%;
+}
+
+/* -------------- INSTALACIONES -------------- */
+
+.instalacionesContainer {
+    max-width: 99%;
+    overflow: hidden;
+}
+
+.fotosInstalaciones {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 1px;
+}
+
+.fotoInsta {
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+} 
+
+.fotoInsta img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: inherit;
+}
+
+.fotoInsta {
+    background-size: cover;
+    background-position: center;
+    height: 400px; 
+    position: relative;
+}
+
+.fotoInsta img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@media (min-width: 1200px) {
+    .fotosInstalaciones {
+		grid-template-columns: repeat(3, 1fr); 
+        grid-template-rows: repeat(2, auto); 
+    }
+}
+
+@media(max-width:1200px){
+	.fotoInsta{
+		height: 250px;
+	}
+}
+
+@media(max-width:1000px){
+	.fotoInsta{
+		height: 320px;
+	}
+	.fotosInstalaciones {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+		grid-template-columns: repeat(2, 1fr); 
+        grid-template-rows: repeat(3, auto); 
+    }
+}
+
+@media (max-width: 800px) {
+    .fotosInstalaciones {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+		grid-template-columns: repeat(2, 1fr); 
+        grid-template-rows: repeat(2, auto); 
+    }
+	.fotoInsta{
+		height: 200px;
+	}
+}
+
+/* Media query para 1 columna en pantallas pequeñas */
+@media (max-width: 480px) {
+    .fotosInstalaciones {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+}
+
+
+/* --------------- MEDIA QUERIES ---------------- */
+
+@media screen and (max-width: 1400px) {
+	.topJourneysContent {
+		flex: 1;
+	}
+
+	.topJourneys .swiper {
+		flex: 1.2;
+		padding-block: 0;
+	}
+
+	.swiper-slide {
+		aspect-ratio: auto !important;
+	}
+
+	/* ------------ features banner */
+	.features {
+		flex-flow: row wrap;
+		column-gap: 5rem;
+		row-gap: 5rem;
+	}
+	.d-optionsimg{
+		max-width: 30rem;
+	}
+
+}
+
+@media screen and (max-width: 1350px) {
+	.teamCards {
+		gap: 2%;
+		width: 90%;
+		margin-inline: auto;
+	}
+	.miembroEquipo:first-child,
+	.miembroEquipo:nth-child(2) {
+		margin-bottom: 100px;
+	}
+	.miembroEquipo {
+		flex: 1 0 48%;
+		display: flex;
+		flex-flow: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.miembroEquipo .socials {
+		gap: 3rem;
+	}
+}
+
+@media screen and (max-width: 1283px) {
+	.features {
+		padding-block: 6rem;
+	}
+}
+
+@media screen and (max-width: 1280px) {
+	.parallax-mirror {
+		display: none;
+	}
+	.heroHome {
+		background-position: 75% !important;
+		background-attachment: scroll;
+		background-image: url(../img/Hero.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	.features,
+	.ourHistoryImage {
+		background-attachment: scroll;
+	}
+
+	.ourHistoryImage {
+		background-position: 80% !important;
+	}
+
+
+}
+
+@media screen and (max-width: 1150px) {
+	#nexSlide {
+		transform: translateY(-50%) translateX(15px);
+	}
+}
+
+@media screen and (max-width: 1080px) {
+	.aboutescapeHunt {
+		flex-flow: column;
+	}
+
+	.aboutescapeHuntContent {
+		margin-bottom: 100px;
+	}
+	.aboutescapeHuntGallery{
+		flex-wrap: wrap;
+		flex-direction: row;
+	}
+	.retosContain{
+		line-height: 1.5rem;
+	}
+	.feature2::before{
+		display: none;
+	}
+}
+
+
+@media screen and (max-width: 960px) {
+
+
+	.topJourneysContent {
+		flex: 1.5 !important;
+	}
+
+	.topJourneys .swiper {
+		flex: 1;
+	}
+
+	.topJourneys #nexSlide {
+		transform: translateY(-50%) translateX(-20px);
+	}
+
+	.topJourneys .topJourneysContent p {
+		max-width: 320px;
+	}
+
+	.ourHistoryImage {
+		display: none;
+	}
+
+	.ourHistoryContent {
+
+		background: none;
+		transform: none;
+	}
+
+	.ourHistory {
+		width: 90%;
+		margin-inline: auto;
+	}
+	.ourTeam p{
+		text-align: initial;
+		margin-top: 0rem;
+		width: 80%;
+	}
+	.menu{
+		padding-inline-start: 0%;
+	}
+}
+
+@media(min-width:960px){
+	.ourHistoryCenter{
+		align-items: center;
+	}
+}
+
+@media(max-width:1000px){
+	.menu{
+		justify-content: center;
+	}	
+}
+
+@media screen and (max-width: 880px) {
+
+	.aboutescapeHuntGallery .photo {
+		width: 300px;
+		height: 200px;
+	}
+	.features{
+		margin-bottom: 6rem;
+	}
+	.feature .buttonHome button{
+		width: 150px;
+		height: 65px;
+		display: flex;
+		justify-content: center;
+	}
+	.feature .buttonHome{
+		display: flex;
+		justify-content: center;
+	}
+}
+
+
+@media screen and (max-width: 680px) {
+	.miembroEquipo:not(.miembroEquipo:last-child) {
+		margin-bottom: 40px;
+	}
+	.d-options{
+        flex-direction: column;
+        width: 90%;
+        gap:1rem;
+    }
+    .d-options2{
+        flex:2;
+        gap:1rem;
+    }
+    .menu ul li {
+        text-align: center;
+    }
+    .textureBack2{
+        display: none;
+    }
+    .d-options2Reserva{
+        flex: 1;
+        max-width: 100%;
+    }
+
+    .optionTitles{
+        display: none;
+    }
+    .d-options1 .centerButton{
+        margin-bottom: 10rem;
+    }
+	.conocenos::after{
+		right: 10%;
+	}
+	.conocenos::before{
+		left:10%;
+	}
+	.newsletter p{
+		font-size: 1.45rem;
+		text-align: center;
+	}
+	.newsletter h2{
+		font-size: 1.7rem;
+	}
+	.aboutescapeHuntContent p{
+		margin-right: 0rem;
+	}
+	.aboutescapeHuntGallery .photo {
+		width: 230px;
+		height: 170px;
+	}
+	.aboutescapeHunt{
+		margin-bottom: 3rem;
+	}
+	.ourTeam{
+		margin-bottom: 3rem;
+	}
+	.miembroEquipo .image .img{
+		height: 100%;
+	}
+	.miembroEquipo .image {
+		width: 20.75rem;
+		height: 21.125rem;
+	}
+	header{
+		height: initial;
+	}
+	.heroHome {
+		background-position: center;
+		padding-bottom: 3rem;
+	}
+	.heroHome .headerContent .heroSubtitle{
+		font-size: 1.2rem;
+		margin-top: 2rem;
+	}
+	.heroHome .headerContent .heroTitle{
+		font-size: 2rem;
+	}
+	.miembroEquipo .socials {
+		gap: 2rem;
+		margin: auto;
+		margin-top: 1rem;
+	}
+	.features{
+		height: auto;
+		margin-bottom: 3rem;
+	}
+	.buttonHome button {
+
+		width: 100px;
+		height: 40px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 0.9rem;   
+	}
+}
+
+@media screen and (max-width: 525px) {
+	.topJourneys .swiper .swiper-slide a {
+		aspect-ratio: 3 / 4;
+	}
+	.miembroEquipo .image {
+		width: 16.75rem;
+		height: 16.125rem;
+	}
+	.d-optionsimg{
+		max-width: 20rem;
+	}
+	.features{
+		margin-bottom: 0rem;
+	}
+	.feature .buttonHome button{
+		width: 120px;
+		height: 55px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	header {
+		background-position: 63% !important;
+	}
+	.headerContent {
+		text-align: center;
+		display: flex;
+		flex-flow: column;
+		align-items: center;
+		align-content: center;
+	}
+	.aboutescapeHuntGallery .photo {
+		width: 340px;
+		height: 200px;
+	}
+	.retosContain{
+		line-height: 1.5rem;
+		font-size: 0.9rem;
+	}
+	.instalaciones{
+		margin-bottom: 1rem;
+	}
+	.buttonHome{
+		display: flex;
+		justify-content: center;
+	}
+
+}
+
+@media screen and (max-width: 440px){
+	.ourTeam{
+		margin-top: 0rem;
+	}
+	.splide-container{
+		margin-bottom: 4rem;
+	}
+	.ourHistoryCenter{
+		margin-bottom: 0rem;
+	}
+	.features{
+		margin-bottom: 2.5rem;
+	}
+	.equip .ourHistoryContent{
+		margin-bottom: 0rem;
+	}
+	
+}
+
+
+

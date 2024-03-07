@@ -1,0 +1,337 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="page-identity" content="home">
+    <title>Escape Room</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/botones.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/juegos.css">
+    <link rel="stylesheet" href="css/eventos.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/reservas.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1e6ab72603.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/reveal.js@4.1.2/dist/theme/white.css" id="theme">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css'>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js' defer></script>
+    <script src="js/swiper.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <a href="#up" id="m-button-up" class="m-button-up"><i class="fa fa-arrow-up"></a></i>
+    <header class="contactJuegos header2" data-parallax="scroll" data-image-src="img/contacta.png" data-speed="0.2">
+        <div class="menu" data-aos="fade-down" data-aos-duration="800">
+            <div class="logo" id="logo">
+                <a href="index.html"><img class="width250" src="img/escapeLogo.png" alt="Escape Hunt"></a>
+            </div>
+            <nav id="menuContainer">
+                <label id="menu-toggle" class="hamburger menu-toggle">
+                    <input type="checkbox">
+                    <svg viewBox="0 0 32 32">
+                        <path class="line line-top-bottom" id="path" d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22">
+                        </path>
+                        <path class="line" d="M7 16 27 16"></path>
+                    </svg>
+                </label>
+                <ul class="list-nav">
+                    <li class="nav-item"><a href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a href="juegos.html">Juegos</a></li>
+                    <li class="nav-item"><a href="eventos.html">Team Building</a></li>
+                    <li class="nav-item"><a href="contacto.html">Contacto</a></li>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="headerContent">
+            <h2 class="heroSubtitle" data-aos="fade-right" data-aos-duration="800">Conéctate con Nosotros</h2>
+            <h1 class="heroTitle" data-aos="fade-right" data-aos-duration="800"><span>Contacto</span></h1>
+        </div>
+    </header>
+    <!------------------ CONTACT ----------------->
+    <div class="container-contact">
+        <section class="contact-form" data-aos="slide-left" data-aos-offset="250" data-aos-delay="70" data-aos-duration="650" data-aos-easing="ease-in-out" data-aos-mirror="true">
+            <div class="contact-form-content">
+                <form action="" class="contact-form-form" >
+                    <div class="form-group">
+                        <label for="name">Nombre</label>
+                        <input type="text" name="name" placeholder="Tu Nombre">
+                    </div>
+                    <div class="form-group">
+                        <label for="lastname">Apellidos</label>
+                        <input type="text" name="lastname" placeholder="Tus Apellidos">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico</label>
+                        <input type="text" name="email" placeholder="Tu Correo">
+                    </div>
+                    <div class="form-group">
+                        <label for="ciudad">Ciudad</label>
+                        <input type="text" name="ciudad" placeholder="Tu Ciudad">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Telefono</label>
+                        <input type="text" name="telefono" placeholder="Tu Teléfono">
+                    </div>
+                    <div class="form-group message">
+                        <label for="message">Mensaje</label>
+                        <textarea name="message" rows="5" placeholder="Escribe aquí tu mensaje"></textarea>
+                    </div>
+                    <div class="form-group message">
+                        <input type="submit" value="ENVIAR MENSAJE" class="button">
+                    </div>
+                </form>
+                <div class="contact-info">
+                    <div class="contact-info-wrapper">
+                        <div class="info">
+                            <div class="info-title">            
+                                <h3 class="sectionSubtitle">Encuentranos</h3>
+                                <h2 class="sectionTitle">Contacto</h2>
+                            </div>
+                            <div class="info-text">
+                                <div class="info-email">
+                                    <div class="info-part-title"><i class="fa fa-envelope-o" aria-hidden="true"></i>Correo</div>
+                                    <p>soporte@escapehunt.com</p>
+                                </div>
+                                <div class="info-phone">
+                                    <div class="info-part-title"><i class="fa fa-phone" aria-hidden="true"></i>Telefono</div>
+                                    <p>+34 611626262</p>
+                                </div>
+                                <div class="info-location">
+                                    <div class="info-part-title"><i class="fa fa-map-marker" aria-hidden="true"></i>Dirección</div>
+                                    <p>Calle Aluche 13, Granada</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-social-media">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+            <!-----------------------  FEEDBACK  ------------------------->
+            <div class="feedback feedback2">
+                <section class="awards">
+                    <div class="ourTeamTitle">
+                        <h3 class="sectionSubtitle conocenos">Encuentranos</h3>
+                        <h2 class="sectionTitle">Como llegar</h2>
+                        <div class="ourHistoryContent gamesContent w90">
+                            <p>En coche: Podeis aparcar en las calles aledañas a nuestras instalaciones o bien pueden aparcar en el parking <span>La 'Estuca'</span> los cuales están a solo 3 minutos caminando.</p>
+
+                            <p>En Metro: Recomendamos bajarse en la <span>estación de “Hipica”</span>, nuestras instalaciones están a solo 5 minutos caminando.</p>
+                            
+                            <p>En Bus: Contamos con paradas de Autobús (33,04) en Calle alhondiga a 150 metros de nuestras instalaciones. Otras paradas Próximas es el (05) con parada en Recogidas a 6 minutos caminando.</p>
+                        </div>
+                <div class="offices-map-content">
+                    <div id="map"></div>
+                </div>
+            </section>
+        </div>
+        <!-----------------------  FEEDBACK  ------------------------->
+        <div class="feedback feedback2">
+            <section class="awards">
+                <div class="ourTeamTitle">
+                    <h3 class="sectionSubtitle conocenos">Conoce</h3>
+                    <h2 class="sectionTitle">Nuestros Logros</h2>
+                    <div class="ourHistoryContent gamesContent w90">
+                        <p>
+                            ¡Nos enorgullece compartir nuestros logros contigo! En <span>Escape Hunt</span>, hemos alcanzado hitos significativos que reflejan nuestro compromiso con la <span>excelencia</span> y la <span>satisfacción del cliente</span>. Desde nuestra apertura, hemos creado experiencias inolvidables para miles de entusiastas del Escape Room, ganando reconocimiento por nuestra <span>creatividad</span>, <span>atención al detalle</span> y <span>pasión</span> por el entretenimiento interactivo.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    <!------------------ELEMENTS ----------------->
+    <div class="article_inner">
+        <div class="clients" data-aos="slide-up" data-aos-offset="230" data-aos-delay="50" data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-mirror="true">
+            <div class="clients-client">
+                <div class="clients-clientInner">
+                    <img src="img/Premios/1.png" alt="1">
+                </div>
+            </div>
+            <div class="clients-client">
+                <div class="clients-clientInner">
+                    <img src="img/Premios/2.png" alt="2">
+                </div>
+            </div>
+            <div class="clients-client">
+                <div class="clients-clientInner">
+                    <img src="img/Premios/3.png" alt="3">
+                </div>
+            </div>
+            <div class="clients-client">
+                <div class="clients-clientInner">
+                    <img src="img/Premios/4.png" alt="4">
+                </div>
+            </div>
+            <div class="clients-client">
+                <div class="clients-clientInner">
+                    <img src="img/Premios/5.png" alt="5">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-----------------RESERVA ------------------->
+    <section class="ourHistory w90 team1">
+        <div class="reservation-form-container">
+            <div class="reservation-form-header">
+                <h2>Formulario de Reservas</h2>
+            </div>
+            <form id="reservation-form">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" class="custom-input" required>
+                </div>
+                <div class="form-group">
+                    <label for="apellidos">Apellidos:</label>
+                    <input type="text" id="apellidos" name="apellidos" class="custom-input" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" class="custom-input" required>
+                </div>
+                <div class="form-group">
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" class="custom-input" required>
+                </div>
+                <div class="form-group">
+                    <label for="num-personas">Número de Personas:</label>
+                    <input type="number" id="num-personas" name="num-personas" class="custom-input" min="1" required>
+                </div>
+                <div class="form-group">
+                    <label for="fecha">Fecha de Reserva:</label>
+                    <input type="date" id="fecha" name="fecha" class="custom-input" required>
+                </div>
+                <div class="button">
+                    <button type="submit" class="">Enviar Reserva</button>
+                </div>
+            </form>
+        </div>
+        <div class="ourHistoryContent align-items-center">
+            <h3 class="sectionSubtitle">Vive la Experiencia</h3>
+            <h2 class="sectionTitle">Hazlo Ya</h2>
+            <p>
+                ¡Prepárate para una experiencia emocionante y llena de adrenalina en nuestra sala de escape! En Escape Hunt, te sumergirás en un mundo lleno de <span>misterios y desafíos</span>, donde tu ingenio y trabajo en equipo serán clave para escapar a tiempo. ¿Estás listo para poner a <span>prueba</span> tus habilidades y vivir una aventura inolvidable?.
+            </p>
+            <p class="teambuildingP">
+                Reserva ahora tu próxima misión con nuestro sencillo <span>formulario de reserva</span>. Simplemente completa los campos con tu información personal y selecciona la fecha y hora deseada. Nuestro equipo estará encantado de ayudarte a organizar tu <span>visita</span> y asegurarse de que tengas una experiencia inolvidable.
+            </p>
+            <p>
+                ¡No esperes más para vivir la emoción de Escape Hunt! ¡<span>Te esperamos</span> para desafiar tu mente y crear recuerdos inolvidables con amigos y familiares!
+            </p>
+        </div>
+    </section>
+    <!---------------- WHY US -------------------->
+    <div class="box-of-checks">
+        <div class="wrap">
+            <div class="box-of-checks__content">
+                <p class="box-of-checks__title">
+                    <span class="box-of-checks__title-text">
+                        ¿Por qué elegir nuestro Escape Room?
+                    </span>
+                </p>
+                <ul class="box-of-checks__list">
+                    <li class="box-of-checks__list-item">
+                        Experiencia llena de emoción y misterio
+                    </li>
+                    <li class="box-of-checks__list-item">
+                        Desafíos temáticos únicos e inmersivos
+                    </li>
+                    <li class="box-of-checks__list-item">
+                        Ambientación y atención al detalle excepcionales
+                    </li>
+                    <li class="box-of-checks__list-item">
+                        Puzzles y enigmas elaborados con ingenio
+                    </li>
+                    <li class="box-of-checks__list-item">
+                        Equipo de Game Masters apasionados y dedicados
+                    </li>
+                    <li class="box-of-checks__list-item">
+                        ¡Una aventura inolvidable te espera!
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="minibanda"></div>
+
+    <!------------------  FOOTER  ---------------->
+    <footer>
+        <div class="footer-body">
+            <div class="footer-content-wrapper">
+                <div class="titleFoot">
+                    <div class="logoFoot">
+                        <img src="img/escapeLogo.png" alt="logo">
+                    </div>
+                </div>
+                <div class="footer-menu">
+                    <div class="footer-title">Menu</div>
+                    <div class="footer-content">
+                        <a href="index.html">Inicio</a>
+                        <a href="juegos.html">Juegos</a>
+                        <a href="eventos.html">Team Building</a>
+                        <a href="contacto.html">Contact</a>
+                    </div>
+                </div>
+                <div class="footer-policies">
+                    <div class="footer-title">Políticas</div>
+                    <div class="footer-content">
+                        <a href="">Política de privacidad</a>
+                        <a href="">Políticas de Cookies</a>
+                        <a href="">Noticias Legales</a>
+                        <a href="">Terminos & Condiciones</a>
+                    </div>
+                </div>
+                <div class="footer-newsletter">
+                    <div class="footer-title">Unete a nuestro noticiario</div>
+                    <div class="footer-newsletter-content">
+                        <form action="">
+                            <input type="text" placeholder="Email Adress">
+                            <input type="submit" value="Submit">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-down-bar">
+            <div>
+                <p class="copyright">© 2024 Todos los derechos reservados.</p>
+                <p class="tac copyright">Diseñado por J.David Garcia</p>
+                <div class="footer-social-media">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+<script src="js/jquery-3.7.1.min.js"></script>
+<script src="https://unpkg.com/scrollreveal"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init();</script>
+<script src="js/main.js"></script>
+<script src="js/parallax.min.js"></script>
+<script src="https://unpkg.com/reveal.js@4.1.2/dist/reveal.js"></script>
+<script src="js/reveal.js"></script>    
+<script>
+    document.getElementById("reservation-form").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevenir el envío por defecto del formulario
+  alert("¡Reserva enviada con éxito!");
+});
+</script>
+</body>  
+</html>

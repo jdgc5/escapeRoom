@@ -1,0 +1,364 @@
+/* ------------------------ ENDING IMG/PHRASE ------------------------*/
+
+
+.containerTapestry {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.endRouteImg {
+  height: 100%;
+  width: 100%;
+  background-image: url(../img/Extras/rompecabezas.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  opacity: 1;
+}
+
+.endRoutePhrase {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 100%;
+  width: 45%;
+  margin: 0 auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.endRoutePhrase h2 {
+  text-align: center;
+  line-height: 5.8rem;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px black;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 3.4rem;
+  font-style: italic;
+  position: absolute;
+  width: 55%;
+}
+
+.mainTeamBuildingImage {
+  margin-top: 5rem;
+  flex: 9;
+  height: 600px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-image: url(../img/TeamBuilding/2.jpg);
+}
+
+.mainTeamBuildingImage2 {
+  margin-top: 5rem;
+  flex: 9;
+  height: 600px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-image: url(../img/TeamBuilding/1.jpg);
+}
+
+
+
+@media(max-width:1283px) {
+  .heroJuegos {
+    background-position: 75% !important;
+    background-attachment: scroll;
+    background-image: url(../img/TeamBuilding/teamBuilding.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+@media (max-width:768px) {
+  .endRoutePhrase h2 {
+    font-size: 1.4rem;
+    line-height: 3rem;
+    width: 90%;
+  }
+
+  .endRouteImg {
+    height: 50vh;
+    width: 100%;
+  }
+
+  .containerTapestry {
+    height: 50vh;
+  }
+}
+
+@media (max-width:440px) {
+  .endRoutePhrase h2 {
+    font-size: 1.2rem;
+    line-height: 2.3rem;
+    width: 90%;
+  }
+}
+
+.fondoCharts{
+  width: 100%;
+}
+
+.teamCharts {
+  width: 85%;
+  margin: auto;
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+  min-height: max-content;
+}
+
+.chart {
+  display: grid;
+  grid-template-rows: 1fr;
+  height: 100%;
+  width: 100%;
+  border: 2px solid #ccc;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.photoGrid {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  transition: transform 0.3s ease-in-out;
+}
+.photo-G-1{
+  background-image: url('../img/TeamBuilding/3.jpg');
+}
+.photo-G-2{
+  background-image: url('../img/TeamBuilding/4.jpg');
+}
+.photo-G-3{
+  background-image: url('../img/TeamBuilding/5.jpg');
+}
+
+.photoGrid:hover {
+  transform: scale(1.03);
+}
+
+.minibanda{
+  width: 100%;
+  height: 2vh;
+  background: rgb(198,10,23);
+  background: linear-gradient(190deg, rgba(198,10,23,1) 19%, rgba(19,19,20,1) 83%);
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  color: white;
+  font-size: var(--text-size);
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  line-height: 1.9rem;
+  background-color: var(--primary-color);
+  background-image: url(../img/Extras/topTexture.png);
+  background-color: black;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.titleTeam {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-family: "Raleway", sans-serif;
+  word-spacing: 1px;
+  letter-spacing: 2px;
+  padding: 2rem 0rem;
+}
+
+.description {
+  font-size: 18px;
+  margin-bottom: 10px;
+  padding: 0rem 0.8rem;
+}
+
+@media(min-width:1570px){
+  .chart .text .button{
+    margin-bottom: 2rem;
+  }
+}
+
+@media(max-width:1550px) {
+  .row {
+    grid-template-columns: 2fr 3fr;
+  }
+  .description{
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+  }
+}
+
+@media(max-width:1380px) {
+  .row {
+    grid-template-columns: 3fr 3fr;
+  }
+}
+
+@media(max-width:1100px){
+  .teamCharts {
+    width: 90%;
+  }
+  .description{
+    padding: 0rem 0.5rem;
+  }
+  .teambuildingP{
+    display: none;
+  }
+  .endRoutePhrase h2{
+    line-height: 4.8rem;
+    font-size: 2.8rem;
+  }
+  .team1, .team2{
+    flex-direction: column;
+  }
+  .team1 .mainTeamBuildingImage{
+    order: 2;
+  }
+  .mainTeamBuildingImage, .mainTeamBuildingImage2{
+    width: 90%;
+    flex: auto;
+    margin-top: 2rem;
+  }
+  .header2 ,header{
+    margin-bottom: 3rem;
+  }
+  .team1 .ourHistoryContent .sectionTitle,.sectionSubtitle{
+    align-self:baseline;
+    margin-left: 5rem;
+  }
+  .team2 .ourHistoryContent .sectionTitle,.sectionSubtitle{
+    align-self:baseline;
+    margin-left: 5rem;
+  }
+}
+
+@media (max-width: 1050px) {
+  .mainTeamBuildingImage {
+    height: 450px;
+  }
+  .mainTeamBuildingImage2 { 
+    height: 550px;
+  }
+}
+
+@media (max-width:900px){
+  .row {
+    grid-template-columns: 1fr; /* Cambia a una sola columna */
+  }
+  .awards .conocenos{
+    margin-left: 0rem;
+  }
+  .photo-G-1,.photo-G-2,.photo-G-3{
+    height: 600px;
+  }
+}
+
+@media (max-width: 800px) {
+  .mainTeamBuildingImage {
+    height: 400px;
+  }
+  .mainTeamBuildingImage2 { 
+    height: 500px;
+  }
+  .endRoutePhrase h2{
+    line-height: 4rem;
+    font-size: 2.3rem;
+  }
+  .description{
+    min-height: auto;
+  }
+  .row .text .button{
+    margin-top: 2rem;
+  }
+
+}
+
+@media (max-width: 580px){
+  .mainTeamBuildingImage2 {
+    margin-top: 0rem;
+    margin-bottom: 4rem;
+  }
+}
+
+@media (max-width: 700px){
+  .mainTeamBuildingImage {
+    height: 300px;
+  }
+  .mainTeamBuildingImage2 { 
+    height: 380px;
+  }
+  .photo-G-1,.photo-G-2,.photo-G-3{
+    height: 500px;
+  }
+}
+
+@media(max-width:550px){
+  .photo-G-1,.photo-G-2,.photo-G-3{
+    height: 450px;
+  }
+  .endRoutePhrase h2{
+    line-height: 3rem;
+    font-size:1.8rem;
+  }
+  
+}
+
+@media(max-width:480px){
+  .photo-G-1,.photo-G-2,.photo-G-3{
+    height: 300px;
+  }
+  .endRoutePhrase h2{
+    line-height: 2.5rem;
+    font-size:1.6rem;
+  }
+}
+
+@media (max-width: 540px){
+  .mainTeamBuildingImage {
+    height: 230px;
+  }
+  .mainTeamBuildingImage2 { 
+    height: 240px;
+  }
+  .photo-G-1,.photo-G-2,.photo-G-3{
+    height: 300px;
+  }
+  .endRoutePhrase h2{
+    line-height: 2.2rem;
+    font-size:1.4rem;
+  }
+}
+
+@media (max-width: 440px){
+  .mainTeamBuildingImage {
+    height:190px;
+  }
+  .mainTeamBuildingImage2 { 
+    height: 240px;
+  }
+}
+

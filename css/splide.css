@@ -1,0 +1,28 @@
+.splide-container {
+    position: relative;
+}
+
+.splide__slide {
+    width: 33.33%;
+    box-sizing: border-box; 
+    padding: 0 10px; 
+}
+
+.splide__slide img {
+    width: 80%; 
+    height: auto; 
+}
+
+@media(max-width:700px){
+
+    /* .splide-container{
+        margin-top: 7rem;
+        height: 50vh !important;
+    } */
+}
+
+@media(max-width:500x){
+    .splide__slide{
+        width: 99.33% !important;
+    }
+}
